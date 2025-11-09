@@ -34,20 +34,13 @@ variable db_password {
 
 variable parameter_group_name {
     type = string
-    default = "default.mysql8.0.42"
-}
-
-
-variable "vpc_security_group_ids" {
-  type        = list(string)
-  default     = []
-}
-
-variable "db_subnet_group_name" {
-  type        = string
-  default     = null
+    default = "default.mysql8.0"
 }
 
 variable "vpc_id" {
     type = string
+}
+
+variable "private_subnet_ids" {
+    type = list(string)
 }

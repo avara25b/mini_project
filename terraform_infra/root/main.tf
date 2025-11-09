@@ -7,4 +7,5 @@ module "rds" {
     vpc_id = module.vpc.vpc_id
     db_username = var.db_username
     db_password = var.db_password
+    private_subnet_ids = module.vpc.subnet_ids
 }
